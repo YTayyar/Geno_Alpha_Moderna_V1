@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNP Formulation Helper</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="GENO_logo_small_web.png" width="236" height="59" alt=""/>
+    <h1>GenoAlpha™ Formulation Tool&nbsp;</h1>
+    <hr>
+<h4>Moderna LNP Version</h4>
+    <form id="lnpForm">
+        <label for="type">Type of Construct:</label>
+        <select id="type" name="VN_Type">
+            <option value="DNA">DNA</option>
+            <option value="RNA">RNA</option>
+        </select>
+        
+        <label for="strands">Is it Single or Double Stranded?</label>
+        <select id="strands" name="VN_Strands">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+        </select>
+        
+        <label for="length">Length of the Construct (nucleotides):</label>
+        <input type="number" id="length" name="VN_length">
+        
+        <label for="knownMW">Do you know the Molecular Weight?</label>
+        <input type="checkbox" id="knownMW" name="knownMW">
+        <p class="sub-title">If the MW is not provided, it will be estimated based on the details of your construct</p>
+
+        
+        <label for="mw" style="display:none;">Molecular Weight (g/mol):</label>
+        <input type="number" id="mw" name="VN_MW" style="display:none;">
+        
+        <label for="concentration">Current Concentration of the Construct (mg/mL):</label>
+        <input type="number" id="concentration" name="VN_Concentration">
+        
+        <label for="amount">Amount of the Construct to Encapsulate (mg):</label>
+        <input type="number" id="amount" name="VN_Amount">
+        
+        <label for="npRatio">N/P Ratio:</label>
+        <input type="number" id="npRatio" name="VN_NP" step="0.1">
+        <p class="sub-title">Guide: siRNA or other short constructs = 3-4, Medium Constructs = 4-5, mRNA = 6-7, pDNA = 7-8</p>
+
+        <label for="totalVolume">Total Final Volume (mL):</label>
+        <input type="number" id="totalVolume" step="0.01">
+
+        
+        <button type="button" onclick="calculateFormulation()">Calculate Formulation</button>
+    </form>
+    
+    <div id="results">
+        <!-- Results will be displayed here -->
+    </div>
+
+    <div id="calculations" style="display:none;">
+    <!-- Calculation details will be displayed here -->
+    </div>
+
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+
+    background-image: url("gen_visual_web_25.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 75%;
+
+    color: #333;
+}
+
+h1 {
+    color: #0097B2;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+    width:50%;
+	font-family: Roboto, sans-serif;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 0px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Makes sure the padding doesn't affect the overall width */
+	background-color: #FFF7D4;
+}
+
+input[type="checkbox"] {
+    margin-top: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0097B2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #003D73;
+}
+
+.sub-title {
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: 5px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+
+
+#results {
+    margin-top: 20px;
+    background: #E6F7FF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#calculations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #d9edf7;
+    border-radius: 8px;
+    display: none; /* Initially hidden until calculations are ready */
+}
